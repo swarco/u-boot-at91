@@ -27,8 +27,8 @@ CONFIG_NAND_BOOT=y
 CONFIG_BOOTDELAY=3
 CONFIG_USE_BOOTARGS=y
 CONFIG_BOOTARGS="console=ttyS0,115200 earlyprintk root='${mender_kernel_root}' rw rootwait"
-CONFIG_MTDIDS_DEFAULT="nand0=atmel_nand"
-CONFIG_MTDPARTS_DEFAULT="mtdparts=atmel_nand:1m(u-boot)ro,-(ubi)"
+MTDIDS_DEFAULT="nand0=atmel_nand"
+MTDPARTS_DEFAULT="mtdparts=atmel_nand:1m(u-boot)ro,-(ubi)"
 # CONFIG_DISPLAY_BOARDINFO is not set
 CONFIG_SPL_SEPARATE_BSS=y
 CONFIG_HUSH_PARSER=y
