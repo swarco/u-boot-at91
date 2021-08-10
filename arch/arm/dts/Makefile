@@ -1032,6 +1032,9 @@ dtb-$(CONFIG_TARGET_DURIAN) += phytium-durian.dtb
 
 dtb-$(CONFIG_TARGET_PRESIDIO_ASIC) += ca-presidio-engboard.dtb
 
+dtb-$(CONFIG_TARGET_SCC_AIR_V2) += \
+	sama5d35-swarco-scc-air-mk2.dtb
+
 targets += $(dtb-y)
 
 # Add any required device tree compiler flags here

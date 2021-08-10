@@ -316,6 +316,14 @@ config TARGET_WB50N
 	select SUPPORT_SPL
 	select ATMEL_SFR
 
+config TARGET_SCC_AIR_V2
+	bool "SCC-Air-v2 hardware"
+	select BOARD_EARLY_INIT_F
+	select SAMA5D3
+	select SUPPORT_SPL
+	select BOARD_LATE_INIT
+
+
 endchoice
 
 config ATMEL_SFR
@@ -360,6 +368,7 @@ source "board/siemens/taurus/Kconfig"
 source "board/siemens/smartweb/Kconfig"
 source "board/laird/wb45n/Kconfig"
 source "board/laird/wb50n/Kconfig"
+source "board/swarco/scc_air_v2/Kconfig"
 
 config SPL_LDSCRIPT
 	default "arch/arm/mach-at91/arm926ejs/u-boot-spl.lds" if CPU_ARM926EJS
