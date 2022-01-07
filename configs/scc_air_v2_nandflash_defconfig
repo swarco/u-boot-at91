@@ -71,6 +71,10 @@ CONFIG_MTD=y
 CONFIG_NAND_ATMEL=y
 CONFIG_ATMEL_NAND_HW_PMECC=y
 CONFIG_PMECC_CAP=8
+CONFIG_MTDIDS_DEFAULT="nand0=atmel_nand"
+CONFIG_MTDPARTS_DEFAULT="mtdparts=atmel_nand:1m(u-boot)ro,-(ubi)"
+MTDIDS_DEFAULT="nand0=atmel_nand"
+MTDPARTS_DEFAULT="mtdparts=atmel_nand:1m(u-boot)ro,-(ubi)"
 CONFIG_DM_ETH=y
 CONFIG_MACB=y
 CONFIG_PINCTRL=y
