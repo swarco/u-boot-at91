@@ -267,7 +267,8 @@
 
 			/* Watchdog */
 			watchdog@fffffe40 {
-				/delete-property/ atmel,dbg-halt;
+            	reg = <0xfffffe40 0x10>;
+            	timeout-sec = <30>;
 				status = "okay";
 			};
 

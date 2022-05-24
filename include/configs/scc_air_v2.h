@@ -18,6 +18,9 @@
  */
 #define ATMEL_ID_UHP			32
 
+#undef CONFIG_WATCHDOG
+#define CONFIG_WATCHDOG_TIMEOUT		30000
+
 /*
  * Specify the clock enable bit in the PMC_SCER register.
  */
