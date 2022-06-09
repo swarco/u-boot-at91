@@ -18,9 +18,6 @@
  */
 #define ATMEL_ID_UHP			32
 
-#define CONFIG_WATCHDOG
-#define CONFIG_WATCHDOG_TIMEOUT		30000
-
 /*
  * Specify the clock enable bit in the PMC_SCER register.
  */
@@ -75,6 +72,12 @@
 
 /* size of u-boot.bin to load */
 #define CONFIG_SYS_MONITOR_LEN		(2 * SZ_512K)
+
+// #define CONFIG_HW_WATCHDOG
+// #define CONFIG_WDT_AT91
+// #define CONFIG_AT91SAM9_WATCHDOG
+// #define CONFIG_HW_WATCHDOG
+// #define WATCHDOG_TIMEOUT_MSECS		30000
 
 #ifdef CONFIG_SD_BOOT
 #define CONFIG_SYS_MMCSD_FS_BOOT_PARTITION	1
