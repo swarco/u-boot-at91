@@ -1,0 +1,10 @@
+SCC_AIR_V2 HARDWARE
+M:	Volker Weber <volker.weber@swarco.de>
+M:  Georg Schäfer <georg.schaefer@swarco.de>
+S:	Maintained
+F:  arch/arm/dts/sama5d35-swarco-scc-air-mk2.dts
+F:	arch/arm/mach-at91/include/mach/at91_ddrsdrc.h
+F:	board/swarco/scc_air_v2/
+F:	configs/scc_air_v2_mmc_defconfig
+F:	configs/scc_air_v2_nandflash_defconfig
+F:	include/configs/scc_air_v2.h

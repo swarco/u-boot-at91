@@ -1165,6 +1165,8 @@ dtb-$(CONFIG_TARGET_IMX8MM_CL_IOT_GATE_OPTEE) += imx8mm-cl-iot-gate-optee.dtb
 
 dtb-$(CONFIG_TARGET_EA_LPC3250DEVKITV2) += lpc3250-ea3250.dtb
 
+dtb-$(CONFIG_TARGET_SCC_AIR_V2) += sama5d35-swarco-scc-air-mk2.dtb
+
 targets += $(dtb-y)
 
 # Add any required device tree compiler flags here
